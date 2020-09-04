@@ -118,7 +118,10 @@ class Linkoption_Public {
 				        $href = $anchor->attributes->getNamedItem('href')->nodeValue;
 
 				        // check internal/external domain
-				        $internal = preg_match('/^https?:\/\/' . preg_quote($host, '/') . '/', $href);
+
+				        $href_url_host = parse_url($href, PHP_URL_HOST);
+						if($href_url_host && $host == $href_url_host) { $internal = true; }
+						else $internal = false;
 
 						$href_parts = explode('/', $href);
 						if(isset($href_parts[0]) && $href_parts[0] == '') { $internal2 = true; }
