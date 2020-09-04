@@ -69,6 +69,26 @@
         
     <?php } ?>
 
+    <h3><?php _e('Available filters', $this->plugin_name); ?>:</h4>
+    <fieldset>
+        <legend class="screen-reader-text"><span><?php _e('Filter for custom content (custom fields etc.): external_links_attributes', $this->plugin_name);?></span></legend>
+        <label>
+            <span><?php _e('Filter for custom content (custom fields etc.): <b>external_links_attributes</b>', $this->plugin_name);?></span>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend class="screen-reader-text"><span><?php _e('Example usage:', $this->plugin_name);?></span></legend>
+        <label>
+            <span><?php _e('Example usage:', $this->plugin_name);?></span>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend class="screen-reader-text"><span><?php _e('$section2 = apply_filters("external_links_attributes", get_post_meta(get_the_ID(), "section2", true));', $this->plugin_name);?></span></legend>
+        <label>
+            <i><?php _e('$section2 = apply_filters("external_links_attributes", get_post_meta(get_the_ID(), "section2", true)); echo $section2;', $this->plugin_name);?></i>
+        </label>
+    </fieldset>
+
     <?php submit_button(__('Save plugin settings', $this->plugin_name), 'primary','submit', TRUE); ?>
 
 </form>
