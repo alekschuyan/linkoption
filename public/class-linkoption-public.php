@@ -184,4 +184,10 @@ class Linkoption_Public {
         $anchor->appendChild($new_attr_el);
 	}
 
+	public function filter_external_links_attributes($content){
+
+		return $this->filter_link_options($content);
+
+	}
+
 }

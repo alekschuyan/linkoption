@@ -16,3 +16,4 @@ Available plugin options and fuctions:
 - Enable nofollow attribute for external links (rel="nofollow").
 - Open links in a new tab (target="_blank").
 - Selection of post types.
+- Filter for custom content (custom fields etc.): external_links_attributes.
