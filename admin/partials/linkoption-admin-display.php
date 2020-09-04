@@ -83,7 +83,7 @@
         </label>
     </fieldset>
     <fieldset>
-        <legend class="screen-reader-text"><span><?php _e('$section2 = apply_filters("external_links_attributes", get_post_meta(get_the_ID(), "section2", true));', $this->plugin_name);?></span></legend>
+        <legend class="screen-reader-text"><span><?php _e('$section2 = apply_filters("external_links_attributes", get_post_meta(get_the_ID(), "section2", true)); echo $section2;', $this->plugin_name);?></span></legend>
         <label>
             <i><?php _e('$section2 = apply_filters("external_links_attributes", get_post_meta(get_the_ID(), "section2", true)); echo $section2;', $this->plugin_name);?></i>
         </label>

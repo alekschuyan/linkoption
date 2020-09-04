@@ -17,3 +17,5 @@ Available plugin options and fuctions:
 - Open links in a new tab (target="_blank").
 - Selection of post types.
 - Filter for custom content (custom fields etc.): external_links_attributes.
+Example usage:
+$section2 = apply_filters("external_links_attributes", get_post_meta(get_the_ID(), "section2", true)); echo $section2;
